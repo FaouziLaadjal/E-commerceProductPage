@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!--styles-->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="icon" href="imgs/favicon-32x32.png" />
+    <link rel="stylesheet" href="styles.css" />
+
+    <title>E-commerce</title>
+  </head>
+  <body>
+    <div class="container-wrp" id="header-wrapper">
+      <div class="contianer">
+        <header>
+          <nav>
+            <img class="logo" src="imgs/logo.svg" alt="" />
+            <div class="navlinks" id="navbarlinks"> 
+              <ul> 
+                <li><a class="a" href="">Collections</a></li>
+                <li><a class="a" href="">Men</a></li>
+                <li><a class="a" href="">Women</a></li>
+                <li><a class="a" href="">About</a></li>
+                <li><a class="a" href="">Contact</a></li>
+              </ul>
+            </div>
+            
+            <div class="chart">
+              <div id="chartBtn"> 
+                <a href="#cartDiv">
+                <img  class="chart-img" src="imgs/icon-cart.svg" alt="" />
+                <span id="items-num"></span></div></a>
+              <img class="chart-img" src="imgs/image-avatar.png" alt="" />
+            </div>
+            <button class="nav-btn" id="navbtn"></button>
+          </nav>
+        </header>
+      </div>
+    </div>
+    <div class="container-wrp">
+      <div class="container hid" id="cartDiv">
+        <div class="cart-div">
+          
+          <h2 class="cart-title">CART</h2>
+          <div= class="cart-row">
+            <span class="cart-header cart-column">ITEM</span>
+            <span class="cart-header cart-column">PRICE</span>
+            <span class="cart-header cart-column">QUANTITY</span>
+          </div=>
+
+          <ul id="itemsList" class="cart-items">         
+          </ul>
+        </li>
+        </div>
+        <div class="cart-total ">
+          <strong class="cart-total-title">Total</strong>
+          <span id="crtTotal" class="cart-total-price"></span>
+          <button id="prBtn"class="prBtn" type="button">PURCHASE</button>
+        </div>
+        </div>
+      <div class="container">
+        <div class="main">
+          <div class="column1">
+            <div class="colmun1-main">
+              <img id="featured" src="imgs/image-product-1.jpg" alt="" />
+            </div>
+
+            <div id="slide-wrap">
+              <img
+                id="slideLeft"
+                class="arw"
+                src="imgs/icon-previous.svg"
+                alt=""
+              />
+
+              <div id="slider">
+                
+                <img class="thumb" src="imgs/image-product-2.jpg" alt="" />
+                <img class="thumb" src="imgs/image-product-4.jpg" alt="" />
+                <img class="thumb" src="imgs/image-product-5.jpg" alt="" />
+                <img class="thumb" src="imgs/image-product-6.png" alt="" />
+                <img class="thumb" src="imgs/image-product-7.jpg" alt="" />
+                <img class="thumb" src="imgs/image-product-1.jpg" alt="" />
+                <img class="thumb" src="imgs/image-product-2.jpg" alt="" />
+                <img class="thumb" src="imgs/image-product-4.jpg" alt="" />
+                <img class="thumb" src="imgs/image-product-5.jpg" alt="" />
+                <img class="thumb" src="imgs/image-product-6.png" alt="" />
+                <img class="thumb" src="imgs/image-product-7.jpg" alt="" />
+                <img class="thumb" src="imgs/image-product-1.jpg" alt="" />
+              </div>
+              <img
+                id="slideRight"
+                class="arw"
+                src="imgs/icon-next.svg"
+                alt=""
+              />
+            </div>
+          </div>
+          <div class="column2" id="columnDiv">
+            <h2>SNEAKER COMPANY</h2>
+            <h1>
+              Fall Limited Edition <br />
+              Sneakers
+            </h1>
+            <p id="discription">
+              These low-profile sneakers are your perfect casual wear <br />
+              companion. Featuring a durable rubber outer sale, they'll <br />
+              withstand everything the weather can offer.
+            </p>
+            <div>
+              <span id="price" class="price">$125.00</span>
+              <span class="discount" id="discount">50%</span>
+            </div>
+            <span class="oldprice" id="oldprice">$250.00</span>
+            <div class="add">
+              <img id="min" class="mat" src="imgs/icon-minus.svg" alt="" />
+              <span id="num">0</span>
+              <img id="plus" class="mat" src="imgs/icon-plus.svg" alt="" />
+              <button type="button" onclick="return false" id="cartBTn">
+                <a type="button" class="cart-confirm" href="" onclick="return false"> Add to cart </a>
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+      
+        
+      </div>
+    </div>
+    <script src="indexx.js"></script>
+  </body>
+</html>
