@@ -19,6 +19,9 @@ let valuePrice = document.getElementById("price");
 let discription = document.getElementById("discription");
 let oldprice = document.getElementById("oldprice");
 let discount = document.getElementById("discount");
+let value = document
+        .getElementById("price")
+        .innerHTML.slice(1, document.getElementById("price").innerHTML.length);
 
 let prBtn = document.getElementById("prBtn");
 function scrollLeft() {
@@ -85,7 +88,7 @@ function addList() {
         }
       }
 
-      price = value * r;
+      let price = value * r;
       var li = document.createElement("li");
       li.className = "cart-row";
       content = `<div class="cart-colmun">
