@@ -36,10 +36,10 @@ function imageActive() {
     activeImages[0].classList.remove("active");
   }
   this.classList.add("active");
-  l = this.src.slice(41, 42) - 1;
+  let l = this.src.slice(73,74) - 1;
   document.getElementById("featured").src = this.src;
   k = k + 1;
-  console.log(l);
+  
   switchcase(l);
   /// pour modifier le contenu
 }
